@@ -3,7 +3,7 @@
 
 <html lang="en">
 
-▼<head>
+<head>
 
 <meta charset="UTF-8">
 
@@ -13,7 +13,7 @@
 
 <title>My First Page</title>
 
-</head> $0
+</head> 
 
 <body>
 
@@ -21,7 +21,6 @@
 
 <p>This is a paragraph</p>
 
-<script type="text/javascript"></script>
 
 </body>
 
