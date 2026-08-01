@@ -1,24 +1,73 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>My First Page</title>
     <style>
-        /* This section styles your webpage */
+        /* Global Page Settings */
         body {
-            background-color: #f0f4f8; /* Soft blue-grey background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
-            color: #333333; /* Dark grey text for easy reading */
+            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 🧭 NAVIGATION BAR STYLES */
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a56db;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #1a56db; /* Turns blue on hover/tap */
+        }
+
+        /* 📦 MAIN CONTENT CONTAINER */
+        .main-content {
+            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
+            text-align: center;
+            padding: 20px;
         }
 
         h1 {
-            color: #1a56db; /* Deep blue heading color */
+            color: #1a56db;
             font-size: 3rem;
             margin-bottom: 10px;
         }
@@ -29,7 +78,7 @@
             margin-bottom: 25px;
         }
 
-        /* This styles your clickable button */
+        /* Button styles */
         .btn {
             background-color: #1a56db;
             color: white;
@@ -44,7 +93,6 @@
             transition: background 0.2s ease;
         }
 
-        /* Changes button color when hovered/tapped */
         .btn:hover {
             background-color: #1e429f;
         }
@@ -52,12 +100,23 @@
 </head>
 <body>
 
-    <h1>Brite</h1>
-    <p>Welcome to my brand new, custom-styled webpage!</p>
-    
-    <!-- This now opens your Instagram profile -->
-    <a href="https://instagram.com" target="_blank" class="btn">Follow My Instagram</a>
+    <!-- 🧭 NEW NAVIGATION BAR ELEMENT -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">BriteWeb</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://instagram.com/aerin_brite_yt" target="_blank">Instagram</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- 📦 PACKAGED CONTENT IN A BOX -->
+    <div class="main-content">
+        <h1>Brite</h1>
+        <p>Welcome to my brand new, custom-styled webpage!</p>
+        <a href="https://instagram.com/aerin_brite_yt" target="_blank" class="btn">Follow My Instagram</a>
+    </div>
 
 </body>
 </html>
