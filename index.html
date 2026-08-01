@@ -1,13 +1,62 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>My First Page</title>
+    <style>
+        /* This section styles your webpage */
+        body {
+            background-color: #f0f4f8; /* Soft blue-grey background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+            color: #333333; /* Dark grey text for easy reading */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #1a56db; /* Deep blue heading color */
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #4b5563;
+            margin-bottom: 25px;
+        }
+
+        /* This styles your clickable button */
+        .btn {
+            background-color: #1a56db;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.2s ease;
+        }
+
+        /* Changes button color when hovered/tapped */
+        .btn:hover {
+            background-color: #1e429f;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Brite</h1>
-    <p>New paragraph</p>
-    <p>This is a paragraph</p>
+    <p>Welcome to my brand new, custom-styled webpage!</p>
+    
+    <!-- This is your new clickable button -->
+    <a href="https://github.com" target="_blank" class="btn">Click Me!</a>
 
 </body>
 </html>
